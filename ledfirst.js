@@ -1,6 +1,6 @@
 var wpi = require('wiring-pi');
 
-// GPIO pin of the led
+// GPIO address of the led ie. for GPIO0 configPin = 0
 var configPin = 0;
 
 // Blinking interval in usec
