@@ -16,4 +16,5 @@ setInterval(function()
   isLedOn = +!isLedOn;	
   //isLedOn = !isLedOn;	
   wpi.digitalWrite(configPin, isLedOn );
+  console.log("led status" + isLedOn) ;
 }, configTimeout);
