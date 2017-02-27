@@ -10,6 +10,15 @@ var isLedOn = 0;
 // Test the LED
 setInterval(function() 
 {	
+  temperature = temperature + 1;
+  if(temperature > 39){
+    temperature = 15;
+  }
+}, 1000);
+
+// Test the LED
+setInterval(function() 
+{	
   isLedOn = +!isLedOn;	
   //isLedOn = !isLedOn;	
   wpi.digitalWrite(configPin, isLedOn );
